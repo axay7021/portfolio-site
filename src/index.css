@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0f;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  /* Smooth Vertical Float Animation */
+  .smooth-float {
+    animation: smoothFloat 3s ease-in-out infinite;
+  }
+
+  .smooth-float-slow {
+    animation: smoothFloat 4s ease-in-out infinite;
+  }
+
+  .smooth-float-fast {
+    animation: smoothFloat 2s ease-in-out infinite;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Keyframes for smooth vertical animation */
+@keyframes smoothFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Customizable smooth float animations with different distances */
+@keyframes smoothFloat10 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes smoothFloat15 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes smoothFloat25 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-25px); }
+}
+
+@keyframes smoothFloat30 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+}
+
+/* Utility classes for different float distances */
+.float-10 {
+  animation: smoothFloat10 3s ease-in-out infinite;
+}
+
+.float-15 {
+  animation: smoothFloat15 3s ease-in-out infinite;
+}
+
+.float-25 {
+  animation: smoothFloat25 3s ease-in-out infinite;
+}
+
+.float-30 {
+  animation: smoothFloat30 3s ease-in-out infinite;
+}
+
+/* Speed variations */
+.float-slow {
+  animation-duration: 4s;
+}
+
+.float-fast {
+  animation-duration: 2s;
+}
+
+.float-very-slow {
+  animation-duration: 5s;
+}
+
+/* Delay variations for staggered animations */
+.float-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.float-delay-2 {
+  animation-delay: 1s;
+}
+
+.float-delay-3 {
+  animation-delay: 1.5s;
+}

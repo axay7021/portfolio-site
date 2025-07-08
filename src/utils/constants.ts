@@ -1,0 +1,113 @@
+export const personalInfo = {
+  name: "Alex Thompson",
+  title: "Senior Full-Stack Developer",
+  email: "alex.thompson.dev@email.com",
+  phone: "+1 (555) 123-4567",
+  location: "San Francisco, CA (PST)",
+  linkedIn: "https://linkedin.com/in/alexthompsondev",
+  github: "https://github.com/alexthompsondev",
+  twitter: "https://twitter.com/alexthompsondev",
+};
+
+export const skills = {
+  frontend: [
+    { name: "React", level: 95, icon: "⚛️" },
+    { name: "TypeScript", level: 92, icon: "📘" },
+    { name: "Next.js", level: 88, icon: "▲" },
+    { name: "HTML5", level: 95, icon: "🌐" },
+    { name: "CSS3", level: 90, icon: "🎨" },
+    { name: "Tailwind CSS", level: 85, icon: "💨" },
+  ],
+  backend: [
+    { name: "Node.js", level: 93, icon: "🟢" },
+    { name: "Express.js", level: 90, icon: "🚀" },
+    { name: "NestJS", level: 85, icon: "🏰" },
+    { name: "Python", level: 80, icon: "🐍" },
+    { name: "GraphQL", level: 82, icon: "🔍" },
+    { name: "REST APIs", level: 95, icon: "🌍" },
+  ],
+  database: [
+    { name: "PostgreSQL", level: 88, icon: "🐘" },
+    { name: "MongoDB", level: 85, icon: "🍃" },
+    { name: "Redis", level: 80, icon: "🔴" },
+    { name: "Prisma", level: 87, icon: "💎" },
+    { name: "Mongoose", level: 83, icon: "🦘" },
+  ],
+  devops: [
+    { name: "Docker", level: 85, icon: "🐳" },
+    { name: "AWS", level: 82, icon: "☁️" },
+    { name: "CI/CD", level: 80, icon: "🔄" },
+    { name: "Git", level: 95, icon: "📋" },
+    { name: "Linux", level: 88, icon: "🐧" },
+  ],
+};
+
+export const projects = [
+  {
+    id: 1,
+    title: "E-Commerce Platform",
+    description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include payment processing, inventory management, and admin dashboard.",
+    tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
+    image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+    liveUrl: "https://ecommerce-demo.com",
+    githubUrl: "https://github.com/alexthompsondev/ecommerce-platform",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Task Management App",
+    description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    tech: ["React", "TypeScript", "NestJS", "Socket.io", "MongoDB"],
+    image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800",
+    liveUrl: "https://taskmaster-app.com",
+    githubUrl: "https://github.com/alexthompsondev/task-management",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Weather Analytics Dashboard",
+    description: "Real-time weather data visualization with interactive charts, forecasting, and location-based alerts using external APIs.",
+    tech: ["Next.js", "TypeScript", "Chart.js", "OpenWeather API"],
+    image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
+    liveUrl: "https://weather-analytics.com",
+    githubUrl: "https://github.com/alexthompsondev/weather-dashboard",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Social Media API",
+    description: "RESTful API for social media platform with authentication, post management, and real-time messaging capabilities.",
+    tech: ["Node.js", "Express", "JWT", "MongoDB", "Socket.io"],
+    image: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800",
+    liveUrl: "https://social-api-docs.com",
+    githubUrl: "https://github.com/alexthompsondev/social-media-api",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Machine Learning Dashboard",
+    description: "Data visualization platform for ML models with interactive charts, model performance tracking, and deployment monitoring.",
+    tech: ["React", "Python", "Flask", "TensorFlow", "D3.js"],
+    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+    liveUrl: "https://ml-dashboard.com",
+    githubUrl: "https://github.com/alexthompsondev/ml-dashboard",
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "Cryptocurrency Tracker",
+    description: "Real-time crypto price tracking with portfolio management, alerts, and advanced charting capabilities.",
+    tech: ["React", "TypeScript", "Node.js", "WebSocket", "CoinGecko API"],
+    image: "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800",
+    liveUrl: "https://crypto-tracker-pro.com",
+    githubUrl: "https://github.com/alexthompsondev/crypto-tracker",
+    featured: false,
+  },
+];
+
+export const aboutText = {
+  intro: "I'm a passionate full-stack developer with 5+ years of experience crafting digital solutions that bridge the gap between innovative design and robust functionality.",
+  philosophy: "I believe in writing clean, maintainable code that not only solves today's problems but scales for tomorrow's challenges. My approach combines technical excellence with user-centered design thinking.",
+  experience: "Throughout my career, I've worked with startups and established companies, leading development teams and architecting scalable applications that serve millions of users.",
+  interests: "When I'm not coding, you'll find me contributing to open-source projects, exploring the latest in web technologies, or sharing knowledge through technical writing and mentoring.",
+};
