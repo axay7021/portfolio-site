@@ -65,21 +65,21 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: personalInfo.github,
+      href: 'https://github.com/axay7021',
       color: 'hover:text-gray-400',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: personalInfo.linkedIn,
+      href: 'https://www.linkedin.com/in/akshay-dobariya-31b6b5224',
       color: 'hover:text-blue-400',
     },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: personalInfo.twitter,
-      color: 'hover:text-cyan-400',
-    },
+    // {
+    //   icon: Twitter,
+    //   label: 'Twitter',
+    //   href: personalInfo.twitter,
+    //   color: 'hover:text-cyan-400',
+    // },
   ];
 
   return (

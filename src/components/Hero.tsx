@@ -480,9 +480,11 @@ const Hero = () => {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '#';
-    link.click();    link.download = 'Alex_Thompson_CV.pdf';
-
+    link.href = '/Akshay_Resume.pdf'; // Uses the actual file in the public folder
+    link.download = 'Akshay_Dobariya_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const scrollToNext = () => {
@@ -557,7 +559,7 @@ const Hero = () => {
             >
               <img
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Alex Thompson"
+                alt="Akshay Dobariya"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
@@ -580,7 +582,7 @@ const Hero = () => {
               } : {}}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              Alex Thompson
+              Akshay Dobariya
             </motion.span>
           </motion.h1>
           
@@ -650,8 +652,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
           >
             {[
-              { icon: Github, href: "https://github.com/alexthompsondev", color: "hover:text-gray-300" },
-              { icon: Linkedin, href: "https://linkedin.com/in/alexthompsondev", color: "hover:text-blue-400" }
+              { icon: Github, href: "https://github.com/axay7021", color: "hover:text-gray-300" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/akshay-dobariya-31b6b5224", color: "hover:text-blue-400" }
             ].map((social, index) => (
               <motion.a
                 key={index}

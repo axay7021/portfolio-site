@@ -21,144 +21,28 @@ const DeveloperAvatar: React.FC<DeveloperAvatarProps> = ({
         className="relative"
       >
         {/* Background Circle */}
-        <div className="w-80 h-80 relative">
-          {/* Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-full backdrop-blur-sm border border-white/10" />
-          
-          {/* Developer Figure */}
-          <svg
-            viewBox="0 0 320 320"
-            className="w-full h-full relative z-10"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {/* Head */}
-            <circle
-              cx="160"
-              cy="120"
-              r="35"
-              fill="#fdbcb4"
-              className="drop-shadow-sm"
-            />
-            
-            {/* Hair */}
-            <path
-              d="M125 95 Q160 80 195 95 Q195 85 160 85 Q125 85 125 95"
-              fill="#4a4a4a"
-            />
-            
-            {/* Eyes */}
-            <circle cx="150" cy="115" r="3" fill="#2563eb" />
-            <circle cx="170" cy="115" r="3" fill="#2563eb" />
-            
-            {/* Glasses */}
-            <rect
-              x="140"
-              y="110"
-              width="15"
-              height="12"
-              fill="none"
-              stroke="#374151"
-              strokeWidth="2"
-              rx="2"
-            />
-            <rect
-              x="165"
-              y="110"
-              width="15"
-              height="12"
-              fill="none"
-              stroke="#374151"
-              strokeWidth="2"
-              rx="2"
-            />
-            <line
-              x1="155"
-              y1="116"
-              x2="165"
-              y2="116"
-              stroke="#374151"
-              strokeWidth="2"
-            />
-            
-            {/* Smile */}
-            <path
-              d="M150 125 Q160 130 170 125"
-              fill="none"
-              stroke="#374151"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            
-            {/* Body - Hoodie */}
-            <rect
-              x="130"
-              y="155"
-              width="60"
-              height="80"
-              fill="#1f2937"
-              rx="8"
-            />
-            
-            {/* Hoodie Details */}
-            <rect
-              x="135"
-              y="160"
-              width="50"
-              height="70"
-              fill="#374151"
-              rx="6"
-            />
-            
-            {/* Hoodie Strings */}
-            <circle cx="155" cy="170" r="2" fill="#6b7280" />
-            <circle cx="165" cy="170" r="2" fill="#6b7280" />
-            
-            {/* Arms */}
-            <rect
-              x="110"
-              y="165"
-              width="20"
-              height="50"
-              fill="#1f2937"
-              rx="10"
-            />
-            <rect
-              x="190"
-              y="165"
-              width="20"
-              height="50"
-              fill="#1f2937"
-              rx="10"
-            />
-            
-            {/* Hands */}
-            <circle cx="120" cy="220" r="8" fill="#fdbcb4" />
-            <circle cx="200" cy="220" r="8" fill="#fdbcb4" />
-            
-            {/* Laptop */}
-            <rect
-              x="140"
-              y="235"
-              width="40"
-              height="25"
-              fill="#374151"
-              rx="2"
-            />
-            <rect
-              x="142"
-              y="237"
-              width="36"
-              height="15"
-              fill="#000000"
-              rx="1"
-            />
-            
-            {/* Code on laptop screen */}
-            <line x1="145" y1="240" x2="155" y2="240" stroke="#3b82f6" strokeWidth="1" />
-            <line x1="145" y1="243" x2="165" y2="243" stroke="#10b981" strokeWidth="1" />
-            <line x1="145" y1="246" x2="160" y2="246" stroke="#f59e0b" strokeWidth="1" />
-            <line x1="145" y1="249" x2="170" y2="249" stroke="#8b5cf6" strokeWidth="1" />
-          </svg>
+        <div className="w-[26rem] h-[26rem] md:w-[32rem] md:h-[32rem] relative flex items-center justify-center">
+          {/* Outer Gradient Circle */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-full backdrop-blur-sm border border-white/10 z-0" />
+          {/* White/transparent circular background for avatar */}
+          <div className="absolute inset-6 md:inset-8 bg-white/80 dark:bg-white/10 rounded-full z-10 shadow-2xl" />
+          {/* Avatar Image with floating animation */}
+          <motion.img
+            src="/vecteezy_boy-standing-holding-laptop-with-left-hand-giving-thumbs-up_11006184.png"
+            alt="Developer Avatar"
+            className="relative z-20 select-none object-contain max-w-[22rem] max-h-[22rem] md:max-w-[28rem] md:max-h-[28rem] mx-auto my-auto"
+            draggable={false}
+            animate={{
+              y: [-18, 18],
+              rotate: [2, -2]
+            }}
+            transition={{
+              duration: 3.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut"
+            }}
+          />
           
           {/* Floating Code Elements */}
           <motion.div
