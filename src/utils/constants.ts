@@ -1,12 +1,12 @@
 export const personalInfo = {
   name: "Akshay Dobariya",
   title: "Senior Full-Stack Developer",
-  email: "alex.thompson.dev@email.com",
-  phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA (PST)",
-  linkedIn: "https://linkedin.com/in/alexthompsondev",
-  github: "https://github.com/alexthompsondev",
-  twitter: "https://twitter.com/alexthompsondev",
+  email: "akshaydobariya01@gmail.com",
+  phone: "+91 91571 66699",
+  location: "Ahmedabad, Gujarat, India",
+  linkedIn: "https://linkedin.com/in/akshay-dobariya-31b6b5224",
+  github: "https://github.com/axay7021",
+  twitter: "https://twitter.com/akshay_dobariya",
 };
 
 export const skills = {

@@ -4,6 +4,7 @@ import { Float, Stars } from '@react-three/drei';
 import { Download, Mail, Github, Linkedin, ArrowDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import * as THREE from 'three';
+import { personalInfo } from '../utils/constants';
 
 // Performance detection hook
 const usePerformanceDetection = () => {
@@ -652,8 +653,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
           >
             {[
-              { icon: Github, href: "https://github.com/axay7021", color: "hover:text-gray-300" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/akshay-dobariya-31b6b5224", color: "hover:text-blue-400" }
+              { icon: Github, href: personalInfo.github, color: "hover:text-gray-300" },
+              { icon: Linkedin, href: personalInfo.linkedIn, color: "hover:text-blue-400" }
             ].map((social, index) => (
               <motion.a
                 key={index}
